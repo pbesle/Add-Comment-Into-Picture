@@ -7,5 +7,3 @@ NewCadre	: NewCadre.o
 CreateCadre	: CreateCadre.o	
 	cc CreateCadre.o -o CreateCadre
 
-pbe	: pbe.o	
-	cc pbe.o -o pbe 
