@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import sys
 import os
 import csv
@@ -39,9 +38,9 @@ for Pictures in range(MaxPicture):
 	NumRandom=random.randrange(0,int(NbPictures))
 	print("** NumRandom =" + str(NumRandom))
 	for NumPicture in range(int(NumRandom),int(NbPictures)):
-		if (Frame[NumPicture][1] == "1"):
+		if (Frame[NumPicture][1] == '1'):
 			continue
-		print("** Frame[" + str(NumPicture) + "] = " + Frame[NumPicture][0] + " ** used = " +  Frame[NumPicture][1])
+		print("** Frame[" + str(NumPicture) + "] = " + str(Frame[NumPicture][0]) + " ** used = " +  str(Frame[NumPicture][1]))
 		Frame[NumPicture][1]=1
 		NewPicture='{:04d}'.format(Pictures) + ".jpg"
 		print("** NewPicture = " + NewPicture)
